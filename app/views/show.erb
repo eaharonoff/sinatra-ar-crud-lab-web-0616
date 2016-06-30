@@ -1,0 +1,7 @@
+<h2><%=@blogger.name%></h2>
+<p><%=@blogger.content%></p>
+
+<form method="post" action="/posts/<%= @blogger.id %>/delete">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+  <input type="submit" value="delete">
+</form>

@@ -1,0 +1,8 @@
+<form action="/posts/<%= @blogger.id %>" method="post">
+    <input id="hidden" type="hidden" name="_method" value="patch">
+<h2><%=@blogger.name%></h2> 
+<input type="TEXT" name="name">
+<p><%=@blogger.content%></p>
+<input type="TEXT" name="content">
+<input type="submit" value="submit">
+</form>
